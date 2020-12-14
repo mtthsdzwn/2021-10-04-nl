@@ -104,7 +104,7 @@ This block displays the date and links to Google Calendar.
 {% if page.humandate %}
 <p id="when">
   <strong>Wanneer:</strong>
-  {{page.humandate}}.  Na afloop van de workshop organiseren we terugkom-ochtend.
+  {{page.humandate}}.
 
 {% comment %}
   {% include nl/workshop_calendar.html %}
@@ -123,7 +123,7 @@ Oorspronkelijke tekst:
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
 {% endcomment %}
 <p id="requirements">
-  <strong>Benodigdheden:</strong> Deelnemers moeten zelf een laptop met een Windows, macOS, of Linux besturingssysteem meenemen, waarop ze administratieve rechten hebben (dat wil zeggen: je moet zelf programma's kunnen installeren). Een tablet of Chromebook volstaat niet. Voorafgaand aan de workshop moeten ze een aantal softwarepaketten installeren (zie <a href="#setup">hieronder</a>).
+  <strong>Benodigdheden:</strong> Vantevoren moet je enkele programma’s op je computer installeren (zie <a href="#setup">hieronder</a>). Het maakt niet uit of je computer met Windows, macOS, of Linux als besturingssysteem heeft. Een tablet of Chromebook volstaat niet.
 </p>
 
 {% comment %}
