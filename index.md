@@ -104,10 +104,12 @@ This block displays the date and links to Google Calendar.
 {% if page.humandate %}
 <p id="when">
   <strong>Wanneer:</strong>
-  {{page.humandate}}. Op 26 oktober, 9u-11u, organiseren we terugkom-ochtend.
-<!--
-  {% include workshop_calendar_nl.html %}
- -->
+  {{page.humandate}}.  Na afloop van de workshop organiseren we terugkom-ochtend.
+
+{% comment %}
+  {% include nl/workshop_calendar.html %}
+{% endcomment %}
+
 </p>
 {% endif %}
 
