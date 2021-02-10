@@ -15,7 +15,7 @@ startdate: 2021-03-01      # machine-readable start date for the workshop in YYY
 enddate: 2021-03-09        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Alice Doek", "Kristina Hettne", "Henriette Reerink", "Matthijs de Zwaan"]
 email: ["a.a.doek@uva.nl", "k.m.hettne@library.leidenuniv.nl", "H.A.Reerink@uva.nl", "m.c.de.zwaan@vu.nl"]
-collaborative_notes: https://pad.carpentries.org/2020-10-online
+collaborative_notes: https://pad.carpentries.org/2021-03-online
 ---
 {% comment %}
 HEADER
