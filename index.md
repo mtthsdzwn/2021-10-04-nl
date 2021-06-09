@@ -3,7 +3,7 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "Universiteit Leiden, Universiteit van Amsterdam, <br/>Vrije Universiteit"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+venue: "Universiteit Leiden, Universiteit van Amsterdam, <br/>Vrije Universiteit, Universiteit Utrecht"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
 address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "nl"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
@@ -14,6 +14,7 @@ humantime: "09:00-12:00"    # human-readable times for the workshop (e.g., "9:00
 startdate: 2021-10-04      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2021-10-12        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Alice Doek", "Kristina Hettne", "Henriette Reerink", "Matthijs de Zwaan"]
+helper: ["Puck Wildschut"]
 email: ["a.a.doek@uva.nl", "k.m.hettne@library.leidenuniv.nl", "H.A.Reerink@uva.nl", "m.c.de.zwaan@vu.nl"]
 collaborative_notes: https://pad.carpentries.org/2021-10-online
 ---
