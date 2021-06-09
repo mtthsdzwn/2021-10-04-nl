@@ -3,32 +3,20 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "online"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+venue: "Universiteit Leiden, Universiteit van Amsterdam, <br/>Vrije Universiteit"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
 address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "nl"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
 latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "Mar 1-2, 3-4, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Oct 5-6 & 11-12, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "09:00-12:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2021-03-01      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2021-03-09        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+startdate: 2021-10-04      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2021-10-12        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Alice Doek", "Kristina Hettne", "Henriette Reerink", "Matthijs de Zwaan"]
 email: ["a.a.doek@uva.nl", "k.m.hettne@library.leidenuniv.nl", "H.A.Reerink@uva.nl", "m.c.de.zwaan@vu.nl"]
-collaborative_notes: https://pad.carpentries.org/2020-10-online
+collaborative_notes: https://pad.carpentries.org/2021-10-online
 ---
-{% comment %}
-HEADER
-
-Edit the values in the block above to be appropriate for your workshop.
-If the value is not 'true', 'false', 'null', or a number, please use
-double quotation marks around the value, unless specified otherwise.
-And run 'make workshop-check' *before* committing to make sure that changes are good.
-{% endcomment %}
-
-{% comment %}
-Check DC curriculum
-{% endcomment %}
 
 {% if site.carpentry == "dc" or site.carpentry == "dc" %}
 {% unless site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-socsci" or site.curriculum == "dc-geospatial" %}
@@ -112,14 +100,18 @@ address.
 DATE
 
 This block displays the date and links to Google Calendar.
+
+NOTE: commented out because the multiple-half-day format does not work well with Google Calendar
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
   <strong>Wanneer:</strong>
-  {{page.humandate}}. Op 26 oktober, 9u-11u, organiseren we terugkom-ochtend.
-<!--
-  {% include workshop_calendar_nl.html %}
- -->
+  {{page.humandate}}.
+
+{% comment %}
+  {% include nl/workshop_calendar.html %}
+{% endcomment %}
+
 </p>
 {% endif %}
 
@@ -133,7 +125,7 @@ Oorspronkelijke tekst:
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
 {% endcomment %}
 <p id="requirements">
-  <strong>Benodigdheden:</strong> Deelnemers moeten zelf een laptop met een Windows, macOS, of Linux besturingssysteem meenemen, waarop ze administratieve rechten hebben (dat wil zeggen: je moet zelf programma's kunnen installeren). Een tablet of Chromebook volstaat niet. Voorafgaand aan de workshop moeten ze een aantal softwarepaketten installeren (zie <a href="#setup">hieronder</a>).
+  <strong>Benodigdheden:</strong> Vantevoren moet je enkele programma’s op je computer installeren (zie <a href="#setup">hieronder</a>). Het maakt niet uit of je computer met Windows, macOS, of Linux als besturingssysteem heeft. Een tablet of Chromebook volstaat niet.
 </p>
 
 {% comment %}
@@ -193,13 +185,14 @@ Display the contact email address set in the configuration file.
   ,
   {% endunless %}
   {% endif %}
-  <a href='mailto:{{email}}'>{{email}}</a>
+  <a href='mailto:{{ email }}'>{{ page.instructor[forloop.index0] }}</a>
   {% endfor %}
   {% else %}
   to-be-announced
   {% endif %}
   voor meer informatie.
 </p>
+
 
 <hr/>
 
