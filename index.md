@@ -193,7 +193,9 @@ Display the contact email address set in the configuration file.
   {% endif %}
   voor meer informatie.
 </p>
-
+<p id="registration">
+<strong>Inschrijven:</strong> Je kan je inschrijven voor de workshop door het invullen van dit <a href="https://docs.google.com/forms/d/e/1FAIpQLScq_UzGoAAHC3_K4010KnPdobjDAzZ4XJ2R8UwoOvdeBY_TQQ/viewform" target=_blank>formulier</a>.
+</p>
 
 <hr/>
 
