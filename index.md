@@ -259,7 +259,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% elsif site.carpentry == "dc" %}
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
+{% include lc/nl/schedule.html %}
 {% endif %}
 
 <hr/>
@@ -288,7 +288,7 @@ please preview your site before committing, and make sure to run
 {% elsif site.carpentry == "dc" %}
 {% include dc/syllabus.html %}
 {% elsif site.carpentry == "lc" %}
-{% include lc/syllabus.html %}
+{% include lc/nl/syllabus.html %}
 {% endif %}
 
 <hr/>
