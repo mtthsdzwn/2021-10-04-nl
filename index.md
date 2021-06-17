@@ -14,7 +14,7 @@ humantime: "09:00-12:00"    # human-readable times for the workshop (e.g., "9:00
 startdate: 2021-10-04      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2021-10-12        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Alice Doek", "Kristina Hettne", "Henriette Reerink", "Matthijs de Zwaan"]
-helper: ["Puck Wildschut"]
+helper: ["Puck Wildschut", "Levi Damsma"]
 email: ["a.a.doek@uva.nl", "k.m.hettne@library.leidenuniv.nl", "H.A.Reerink@uva.nl", "m.c.de.zwaan@vu.nl"]
 collaborative_notes: https://pad.carpentries.org/2021-10-online
 ---
